@@ -1,0 +1,132 @@
+.home {
+    min-height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        img{
+            width: 650px;
+        }
+        .home-info {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 40px;
+            }
+            .text-anime{
+                width: 32rem;
+                position: relative;
+                h3 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: #00abf0;
+                    color: transparent;
+                    -webkit-text-stroke: .7px #00abf0;
+                }
+            }
+            p {
+                font-size: 16px;
+            }
+
+            .box-btn {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                a {
+                    width: 150px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #00abf0;
+                    letter-spacing: 1px;
+                    font-size: 19px;
+                    font-weight: 600;
+                    border: 2px solid #00abf0;
+                    border-radius: 8px;
+                    color: #000000;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        background: #081b29;
+                        z-index: -1;
+                        transition: all .3s ease;
+                    }
+                    &:hover::before{
+                        width: 100%;
+                    }
+                    &:hover{
+                        color: #00abf0;
+                    }
+                }
+                a:nth-child(2) {
+                    color: #00abf0;
+                    background-color: transparent;
+                    &::before{
+                        background: #00abf0;
+                    }
+                    &:hover::before{
+                        color: #081b29;
+                    }
+                    &:hover{
+                        color: #081b29;
+                    }
+                }
+            }
+            .home-scl {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                position: absolute;
+                bottom: 75px;
+                a {
+                    color: #00abf0;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid #00abf0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    background-color: transparent;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-color: #00abf0;
+                        width: 0;
+                        height: 100%;
+                        left: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        transition: all .3s ease;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                    &:hover{
+                        color: #081b29;
+                    }
+                }
+            }
+        }
+    }
+}

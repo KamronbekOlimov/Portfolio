@@ -1,0 +1,62 @@
+.about {
+  min-height: 100vh;
+  padding: 50px 0px;
+}
+.about h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+}
+.about h2::after {
+  content: "";
+  background-color: #00abf0;
+  width: 100px;
+  border-radius: 5px;
+  height: 4px;
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+}
+.about .about-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+}
+.about .about-details img {
+  width: 600px;
+}
+.about .about-details .about-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.about .about-details .about-info h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #00abf0;
+}
+.about .about-details .about-info p {
+  font-size: 19px;
+  font-weight: 500;
+}
+.about .about-details .about-info a {
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 500;
+}
+.about .about-details .about-info button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 500;
+  color: #00abf0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid #00abf0;
+}/*# sourceMappingURL=About.css.map */

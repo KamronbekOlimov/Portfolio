@@ -1,0 +1,58 @@
+nav {
+  padding: 15px 0px;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container img {
+  width: 30px;
+}
+nav .container .links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .container .links a {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding: 0px 10px;
+}
+nav .container .links a::after {
+  position: absolute;
+  content: "";
+  background-color: #00abf0;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+nav .container .links a:hover::after {
+  width: 100%;
+}
+nav .container .links a.active {
+  transform: translateY-(5px);
+  color: #00abf0;
+}
+nav .container .links a.active::after {
+  width: 100%;
+}
+nav .container .links button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00abf0;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  color: #000000;
+  cursor: pointer;
+}/*# sourceMappingURL=Navbar.css.map */
