@@ -9,4 +9,14 @@ footer p {
 }
 footer p a {
   color: #00abf0;
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 10px 0px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

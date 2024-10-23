@@ -11,10 +11,10 @@
   position: relative;
 }
 .home .container img {
-  width: 650px;
+  width: 45%;
 }
 .home .container .home-info {
-  max-width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
@@ -22,7 +22,7 @@
 .home .container .home-info h1 {
   font-size: 50px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 60px;
 }
 .home .container .home-info .text-anime {
   width: 32rem;
@@ -128,4 +128,91 @@
 }
 .home .container .home-info .home-scl a:hover {
   color: #081b29;
+}
+
+@media (max-width: 1200px) {
+  .home .container .home-info h1 {
+    font-size: 40px;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 30px;
+  }
+  .home .container .home-info p {
+    font-size: 15px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -30px;
+  }
+}
+@media (max-width: 992px) {
+  .home .container .home-info h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .home .container .home-info p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .home .container .home-info .box-btn a {
+    width: 130px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -40px;
+  }
+}
+@media (max-width: 768px) {
+  .home .container .home-info {
+    width: 50%;
+  }
+  .home .container .home-info .box-btn a {
+    width: 100px;
+    font-size: 12px;
+  }
+  .home .container .home-info h1 {
+    font-size: 28px;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 26px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -70px;
+  }
+}
+@media (max-width: 576px) {
+  .home {
+    width: 100%;
+  }
+  .home .container {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .home .container img {
+    width: 100%;
+  }
+  .home .container .home-info {
+    width: 100%;
+    row-gap: 13px;
+  }
+  .home .container .home-info h1 {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .home .container .home-info .text-anime {
+    width: 100%;
+  }
+  .home .container .home-info .text-anime h3 {
+    font-size: 27px;
+  }
+  .home .container .home-info p {
+    font-size: 15px;
+  }
+  .home .container .home-info .home-scl {
+    bottom: -30px;
+  }
 }/*# sourceMappingURL=Home.css.map */

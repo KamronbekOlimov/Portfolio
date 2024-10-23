@@ -83,4 +83,82 @@
 }
 .projects .container .cards .card:nth-child(6) {
   background-image: url(/public/clock.jfif);
+}
+
+@media (max-width: 1200px) {
+  .projects .container {
+    row-gap: 30px;
+  }
+  .projects .container h2 {
+    font-size: 40px;
+  }
+  .projects .container .cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27px;
+  }
+  .projects .container .cards .card {
+    height: 280px;
+  }
+}
+@media (max-width: 992px) {
+  .projects .container h2 {
+    font-size: 37px;
+  }
+  .projects .container .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects .container .cards .card {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .projects .container h2 {
+    font-size: 35px;
+  }
+  .projects .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .container .cards .card {
+    height: 320px;
+  }
+}
+@media (max-width: 576px) {
+  .projects .container h2 {
+    font-size: 30px;
+  }
+  .projects .container h2::after {
+    width: 75px;
+  }
+  .projects .container .cards .card {
+    height: 270px;
+  }
+  .projects .container .cards .card h3 {
+    font-size: 17px;
+  }
+  .projects .container .cards .card a {
+    font-size: 12px;
+    bottom: 10px;
+  }
+  .projects .container .cards .card a:nth-child(2) {
+    width: 80px;
+  }
+  .projects .container .cards .card a:nth-child(3) {
+    width: 40px;
+    right: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .projects .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects .container .cards .card {
+    height: 300px;
+  }
+  .projects .container .cards .card a:nth-child(2) {
+    width: 100px;
+  }
+  .projects .container .cards .card a:nth-child(3) {
+    width: 60px;
+    right: 10px;
+  }
 }/*# sourceMappingURL=Projects.css.map */

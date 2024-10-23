@@ -10,39 +10,15 @@ nav .container {
 nav .container img {
   width: 30px;
 }
-nav .container .links {
+nav .container .nav-link {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
-nav .container .links a {
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-  padding: 0px 10px;
+nav .container .nav-link .menu-bar {
+  display: none;
 }
-nav .container .links a::after {
-  position: absolute;
-  content: "";
-  background-color: #00abf0;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: -5px;
-  transition: all 0.3s ease;
-}
-nav .container .links a:hover::after {
-  width: 100%;
-}
-nav .container .links a.active {
-  transform: translateY-(5px);
-  color: #00abf0;
-}
-nav .container .links a.active::after {
-  width: 100%;
-}
-nav .container .links button {
+nav .container .nav-link .my-contact {
   width: 150px;
   height: 40px;
   display: flex;
@@ -56,4 +32,76 @@ nav .container .links button {
   border-radius: 8px;
   color: #000000;
   cursor: pointer;
+}
+nav .container .nav-link .links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .container .nav-link .links a {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding: 0px 10px;
+}
+nav .container .nav-link .links a::after {
+  position: absolute;
+  content: "";
+  background-color: #00abf0;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+nav .container .nav-link .links a:hover::after {
+  width: 100%;
+}
+nav .container .nav-link .links a.active {
+  transform: translateY-(5px);
+  color: #00abf0;
+}
+nav .container .nav-link .links a.active::after {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  nav .container .nav-link .links a {
+    font-size: 16px;
+  }
+  nav .container .nav-link .links a::after {
+    height: 1.7px;
+  }
+}
+@media (max-width: 992px) {
+  nav .container .nav-link .links {
+    display: none;
+  }
+  nav .container .nav-link .menu-bar {
+    display: block;
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .container .nav-link .my-contact {
+    height: 37px;
+    width: 130px;
+  }
+}
+@media (max-width: 576px) {
+  nav {
+    padding: 10px 0px;
+  }
+  nav .container img {
+    width: 30px;
+  }
+  nav .container .nav-link .my-contact {
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

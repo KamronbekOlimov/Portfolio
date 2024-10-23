@@ -10,3 +10,12 @@ footer{
         }
     }
 }
+@media(max-width: 576px){
+    footer{
+        padding: 10px 0px;
+        p{
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

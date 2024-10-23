@@ -3,27 +3,33 @@
     padding: 50px 0px;
     display: flex;
     align-items: center;
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
-        img{
-            width: 650px;
+
+        img {
+            width: 45%;
         }
+
         .home-info {
-            max-width: 50%;
+            width: 45%;
             display: flex;
             flex-direction: column;
             row-gap: 15px;
+
             h1 {
                 font-size: 50px;
                 font-weight: 700;
-                line-height: 40px;
+                line-height: 60px;
             }
-            .text-anime{
+
+            .text-anime {
                 width: 32rem;
                 position: relative;
+
                 h3 {
                     font-size: 32px;
                     font-weight: 700;
@@ -32,6 +38,7 @@
                     -webkit-text-stroke: .7px #00abf0;
                 }
             }
+
             p {
                 font-size: 16px;
             }
@@ -40,6 +47,7 @@
                 display: flex;
                 align-items: center;
                 gap: 30px;
+
                 a {
                     width: 150px;
                     height: 40px;
@@ -56,7 +64,8 @@
                     position: relative;
                     overflow: hidden;
                     z-index: 1;
-                    &::before{
+
+                    &::before {
                         content: "";
                         position: absolute;
                         top: 0;
@@ -67,33 +76,41 @@
                         z-index: -1;
                         transition: all .3s ease;
                     }
-                    &:hover::before{
+
+                    &:hover::before {
                         width: 100%;
                     }
-                    &:hover{
+
+                    &:hover {
                         color: #00abf0;
                     }
                 }
+
                 a:nth-child(2) {
                     color: #00abf0;
                     background-color: transparent;
-                    &::before{
+
+                    &::before {
                         background: #00abf0;
                     }
-                    &:hover::before{
+
+                    &:hover::before {
                         color: #081b29;
                     }
-                    &:hover{
+
+                    &:hover {
                         color: #081b29;
                     }
                 }
             }
+
             .home-scl {
                 display: flex;
                 align-items: center;
                 gap: 20px;
                 position: absolute;
                 bottom: 75px;
+
                 a {
                     color: #00abf0;
                     width: 40px;
@@ -108,7 +125,8 @@
                     position: relative;
                     z-index: 1;
                     overflow: hidden;
-                    &::after{
+
+                    &::after {
                         position: absolute;
                         content: "";
                         background-color: #00abf0;
@@ -119,12 +137,145 @@
                         z-index: -1;
                         transition: all .3s ease;
                     }
-                    &:hover::after{
+
+                    &:hover::after {
                         width: 100%;
                     }
-                    &:hover{
+
+                    &:hover {
                         color: #081b29;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .home {
+        .container {
+            .home-info {
+                h1 {
+                    font-size: 40px;
+                }
+
+                .text-anime {
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                .home-scl {
+                    bottom: -30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .home {
+        .container {
+            .home-info {
+                h1 {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                .text-anime {
+                    h3 {
+                        font-size: 27px;
+                        line-height: 30px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .box-btn {
+                    a {
+                        width: 130px;
+                    }
+                }
+
+                .home-scl {
+                    bottom: -40px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .home {
+        .container {
+            .home-info {
+                width: 50%;
+                .box-btn {
+                    a {
+                        width: 100px;
+                        font-size: 12px;
+                    }
+                }
+                h1 {
+                    font-size: 28px;
+                }
+
+                .text-anime {
+                    h3 {
+                        font-size: 26px;
+                    }
+                }
+
+                .home-scl {
+                    bottom: -70px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .home {
+        width: 100%;
+        .container {
+            width: 100%;
+            flex-direction: column;
+            row-gap: 30px;
+
+            img {
+                width: 100%;
+            }
+
+            .home-info {
+                width: 100%;
+                row-gap: 13px;
+
+                h1 {
+                    font-size: 35px;
+                    line-height: 40px;
+                    font-weight: 600;
+                }
+
+                .text-anime {
+                    width: 100%;
+                    h3 {
+                        font-size: 27px;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                .home-scl {
+                    bottom: -30px;
                 }
             }
         }
