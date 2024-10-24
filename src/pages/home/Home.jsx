@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import '/css/Home.css'
 function Home() {
     return (
-        <div className="home">
+        <div id='home' className="home">
             <div className="container">
                 <div className="home-info">
                     <h1>Hi, I am Kamronbek Olimov</h1>

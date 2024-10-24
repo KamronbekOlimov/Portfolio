@@ -1,7 +1,3 @@
-.about {
-  min-height: 100vh;
-  padding: 120px 0px 50px 0px;
-}
 .about .container {
   display: flex;
   flex-direction: column;
@@ -110,9 +106,6 @@
   }
 }
 @media (max-width: 992px) {
-  .about {
-    padding: 117px 0px 50px 0px;
-  }
   .about h2 {
     font-size: 32px;
   }
@@ -144,10 +137,6 @@
   }
 }
 @media (max-width: 576px) {
-  .about {
-    min-height: 100vh;
-    padding: 106.4px 0px 0px 50px 0px;
-  }
   .about .container {
     display: flex;
     flex-direction: column;

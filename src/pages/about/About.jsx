@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import '/css/About.css'
 function About(){
     return (
-        <div className="about">
+        <div id='about' className="about">
             <div className="container">
                 <h2>About Me</h2>
                 <div className="about-details">

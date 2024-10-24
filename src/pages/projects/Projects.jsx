@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import '/css/Projects.css'
 function Projects() {
     return (
-        <div className='projects'>
+        <div id='projects' className='projects'>
             <div className="container">
                 <h2>Projects</h2>
                 <div className="cards">

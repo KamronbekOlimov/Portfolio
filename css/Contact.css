@@ -1,6 +1,5 @@
 .contact {
-  min-height: 100vh;
-  padding: 120px 0px 50px 0px;
+  padding: 50px 0px;
   display: flex;
   align-items: center;
 }
@@ -100,9 +99,6 @@
   }
 }
 @media (max-width: 992px) {
-  .contact {
-    padding: 117px 0px 50px 0px;
-  }
   .contact .container h2 {
     font-size: 37px;
   }
@@ -134,10 +130,5 @@
   }
   .contact .container form button {
     width: 130px;
-  }
-}
-@media (max-width: 576px) {
-  .contact {
-    padding: 106.4px 0px 50px 0px;
   }
 }/*# sourceMappingURL=Contact.css.map */
