@@ -31,7 +31,7 @@ function Navbar({ menu, setMenu }) {
                 </ul>
             </div>
             <div className="container">
-                <Link to={'/'}><img src="/logo.webp" loading='lazy' alt="logo" /></Link>
+                <a href='#home'><img src="/logo.webp" loading='lazy' alt="logo" /></a>
                 <div className="nav-link">
                     <ul className="links">
                         {
