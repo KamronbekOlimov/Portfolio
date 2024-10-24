@@ -29,7 +29,9 @@
   gap: 30px;
 }
 .projects .container .cards .card {
-  background: url(/public/countries-react.webp) center;
+  background-image: url(/public/countries-dark.webp);
+  background-color: #112e42;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -70,19 +72,34 @@
   right: 15px;
 }
 .projects .container .cards .card:nth-child(2) {
-  background-image: url(/public/countries-js.webp);
+  background-image: url(/public/countries.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projects .container .cards .card:nth-child(3) {
   background-image: url(/public/christmas.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projects .container .cards .card:nth-child(4) {
   background-image: url(/public/invisible.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projects .container .cards .card:nth-child(5) {
   background-image: url(/public/weather.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projects .container .cards .card:nth-child(6) {
   background-image: url(/public/clock.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1200px) {
