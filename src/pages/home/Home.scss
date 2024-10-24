@@ -62,7 +62,7 @@
                     overflow: hidden;
                     z-index: 1;
 
-                    &::before {
+                    &::after {
                         content: "";
                         position: absolute;
                         top: 0;
@@ -74,7 +74,7 @@
                         transition: all .3s ease;
                     }
 
-                    &:hover::before {
+                    &:hover::after {
                         width: 100%;
                     }
 
@@ -87,11 +87,11 @@
                     color: #00abf0;
                     background-color: transparent;
 
-                    &::before {
+                    &::after {
                         background: #00abf0;
                     }
 
-                    &:hover::before {
+                    &:hover::after {
                         color: #081b29;
                     }
 
@@ -199,11 +199,31 @@
                 .box-btn {
                     a {
                         width: 130px;
+                        &::after{
+                            background: transparent;
+                        }
+                        &:hover{
+                            color: #000000;
+                        }
+                        &:nth-child(2)::after{
+                            background: transparent;
+                        }
+                        &:nth-child(2):hover{
+                            color: #00abf0;
+                        }
                     }
                 }
 
                 .home-scl {
                     bottom: -25%;
+                    a{
+                        &::after{
+                            background: transparent;
+                        }
+                        &:hover{
+                            color: #00abf0;
+                        }
+                    }
                 }
             }
         }

@@ -77,7 +77,7 @@
 }
 .contact .container form button::after {
   content: "";
-  background-color: #00abf0;
+  background: #00abf0;
   width: 0;
   height: 100%;
   left: 0;
@@ -101,6 +101,12 @@
 @media (max-width: 992px) {
   .contact .container h2 {
     font-size: 37px;
+  }
+  .contact .container form button::after {
+    background: transparent;
+  }
+  .contact .container form button:hover {
+    color: #00abf0;
   }
 }
 @media (max-width: 768px) {

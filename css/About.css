@@ -124,6 +124,12 @@
   .about .about-details .about-info .goto-resume {
     font-size: 16px;
   }
+  .about .about-details .about-info .goto-resume::after {
+    background: transparent;
+  }
+  .about .about-details .about-info .goto-resume:hover {
+    color: #00abf0;
+  }
 }
 @media (max-width: 768px) {
   .about h2 {

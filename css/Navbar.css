@@ -42,7 +42,7 @@ nav .menu .link {
 }
 nav .menu .link a {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 nav .menu .link a.active {
@@ -144,7 +144,7 @@ nav .container .nav-link .links a.active::after {
     padding: 10px 0px;
   }
   nav .menu {
-    top: 56.4px;
+    top: 55px;
   }
   nav .container img {
     width: 30px;

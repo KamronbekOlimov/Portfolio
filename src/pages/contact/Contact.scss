@@ -73,7 +73,7 @@
                 z-index: 1;
                 &::after{
                     content: "";
-                    background-color: #00abf0;
+                    background: #00abf0;
                     width: 0;
                     height: 100%;
                     left: 0;
@@ -106,6 +106,16 @@
         .container{
             h2{
                 font-size: 37px;
+            }
+            form{
+                button{
+                    &::after{
+                        background: transparent;
+                    }
+                    &:hover{
+                        color: #00abf0;
+                    }
+                }
             }
         }
     }
