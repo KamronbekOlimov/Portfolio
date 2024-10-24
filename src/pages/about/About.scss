@@ -51,7 +51,7 @@
                 color: #FFFFFF;
                 font-size: 19px;
                 font-weight: 500;
-
+                text-decoration: underline;
             }
 
             .goto-resume {
@@ -70,6 +70,7 @@
                 overflow: hidden;
                 position: relative;
                 z-index: 1;
+                text-decoration: none;
 
                 &::after {
                     content: "";
@@ -111,12 +112,10 @@
                 }
                 a {
                     font-size: 17px;
-                    text-decoration: underline;
                 }
                 .goto-resume {
                     width: 140px;
                     font-size: 17px;
-                    text-decoration: none;
                 }
             }
         }

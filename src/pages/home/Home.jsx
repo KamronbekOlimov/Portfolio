@@ -21,7 +21,7 @@ function Home() {
                         <Link to={'https://Threads.net/@kamronbek_olimov'}><i className="fa-brands fa-threads"></i></Link>
                     </div>
                 </div>
-                <img src="/frontend.png" alt="" />
+                <img loading='lazy' src="/frontend.webp" alt="" />
             </div>
         </div>
     )

@@ -8,43 +8,43 @@ function Services() {
                 <h3>Skills</h3>
                 <div className="box-skills">
                     <div className="skills">
-                        <img src="/html.webp" alt="" />
+                        <img loading='lazy' src="/html.webp" alt="skill img" />
                         <p>HTML5</p>
                     </div>
                     <div className="skills">
-                        <img src="/css.png" alt="" />
+                        <img loading='lazy' src="/css.webp" alt="skill img" />
                         <p>CSS3</p>
                     </div>
                     <div className="skills">
-                        <img src="/sass.png" alt="" />
+                        <img loading='lazy' src="/sass.webp" alt="skill img" />
                         <p>SASS</p>
                     </div>
                     <div className="skills">
-                        <img src="/tailwind.png" alt="" />
+                        <img loading='lazy' src="/tailwind.webp" alt="skill img" />
                         <p>TAILWIND</p>
                     </div>
                     <div className="skills">
-                        <img src="/bootstrap.webp" alt="" />
+                        <img loading='lazy' src="/bootstrap.webp" alt="skill img" />
                         <p>BOOTSTRAP</p>
                     </div>
                     <div className="skills">
-                        <img src="/js.webp" alt="" />
+                        <img loading='lazy' src="/js.webp" alt="skill img" />
                         <p>JavaScript</p>
                     </div>
                     <div className="skills">
-                        <img src="/react.webp" alt="" />
+                        <img loading='lazy' src="/react.webp" alt="skill img" />
                         <p>REACT</p>
                     </div>
                     <div className="skills">
-                        <img src="/firebase.png" alt="" />
+                        <img loading='lazy' src="/firebase.webp" alt="skill img" />
                         <p>FIREBASE</p>
                     </div>
                     <div className="skills">
-                        <img src="/git.png" alt="" />
+                        <img loading='lazy' src="/git.webp" alt="skill img" />
                         <p>GIT</p>
                     </div>
                     <div className="skills">
-                        <img src="/github.png" alt="" />
+                        <img loading='lazy' src="/github.webp" alt="skill img" />
                         <p>GITHUB</p>
                     </div>
                 </div>

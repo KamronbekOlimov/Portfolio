@@ -30,7 +30,7 @@
             grid-template-columns: repeat(5, 1fr);
             gap: 30px;
             .card {
-                background-image: url(/public/countries-react.jpg);
+                background: url(/public/countries-react.webp) center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 height: 300px;
@@ -71,19 +71,19 @@
                 }
             }
             .card:nth-child(2){
-                background-image: url(/public/countries-js.jpg);
+                background-image: url(/public/countries-js.webp);
             }
             .card:nth-child(3){
-                background-image: url(/public/christmas.avif);
+                background-image: url(/public/christmas.webp);
             }
             .card:nth-child(4){
-                background-image: url(/public/invisible.jpg);
+                background-image: url(/public/invisible.webp);
             }
             .card:nth-child(5){
-                background-image: url(/public/weather.jpg);
+                background-image: url(/public/weather.webp);
             }
             .card:nth-child(6){
-                background-image: url(/public/clock.jfif);
+                background-image: url(/public/clock.webp);
             }
         }
     }

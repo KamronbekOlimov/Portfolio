@@ -24,7 +24,7 @@ function Navbar({menu, setMenu}) {
                 </ul>
             </div>
             <div className="container">
-                <Link to={'/'}><img src="/logo.png" alt="logo" /></Link>
+                <Link to={'/'}><img src="/logo.webp" loading='lazy' alt="logo" /></Link>
                 <div className="nav-link">
                     <ul className="links">
                         <li>
