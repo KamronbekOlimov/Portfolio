@@ -1,6 +1,6 @@
 .projects {
     min-height: 100vh;
-    padding: 50px 0px;
+    padding: 120px 0px 50px 0px;
 
     .container {
         display: flex;
@@ -34,7 +34,6 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 height: 300px;
-                // border: 2px solid #00abf0;
                 border-radius: 10px;
                 overflow: hidden;
                 padding: 15px;
@@ -108,6 +107,7 @@
 }
 @media(max-width: 992px){
     .projects {
+        padding: 117px 0px 50px 0px;
         .container {
             h2 {
                 font-size: 37px;
@@ -137,7 +137,8 @@
     }
 }
 @media(max-width: 576px){
-    .projects {    
+    .projects {
+        padding: 106.4px 0px 50px 0px;    
         .container {    
             h2 {
                 font-size: 30px;

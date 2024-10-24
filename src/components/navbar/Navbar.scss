@@ -1,6 +1,52 @@
 nav {
     padding: 15px 0px;
     background-color: #112e42;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    .menu{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: #081b29;
+        z-index: 10;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all .3s ease;
+        &.active{
+            transform: scaleY(1);
+        }
+        .menu-btn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #112e42;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+        }
+        .link{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 20px;
+            a{
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 500;
+                &.active {
+                    color: #00abf0;
+                }
+            }
+        }
+    }
     .container {
         display: flex;
         align-items: center;
@@ -59,7 +105,6 @@ nav {
                     }
 
                     &.active {
-                        transform: translateY-(5px);
                         color: #00abf0;
                     }
 
@@ -91,6 +136,9 @@ nav {
 
 @media(max-width: 992px) {
     nav {
+        .menu{
+            top: 67px;
+        }
         .container {
             .nav-link{
                 .links {
@@ -115,6 +163,9 @@ nav {
 }
 @media(max-width: 576px){
     nav {
+        .menu{
+            top: 56.4px;
+        }
         padding: 10px 0px;
         .container {
             img {

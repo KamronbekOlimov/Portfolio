@@ -9,17 +9,17 @@ import Contact from './pages/contact/Contact'
 import { useState } from 'react'
 import Footer from './components/footer/Footer'
 function App() {
-  const [message, setMessage] = useState(JSON.parse(localStorage.getItem('message'))??[])
+  const [menu, setMenu] = useState(false)
   return (
     <div className='body'>
     <BrowserRouter>
-    <Navbar/>
+    <Navbar menu={menu} setMenu={setMenu}/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/projects' element={<Projects/>}/>
-      <Route path='/contact' element={<Contact message={message} setMessage={setMessage}/>}/>
+      <Route path='/contact' element={<Contact/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import '/css/Home.css'
 function Home() {
     return (
@@ -9,7 +9,7 @@ function Home() {
                     <div className="text-anime">
                         <h3>Frontend web developer</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eveniet soluta, sit enim quibusdam exercitationem odit esse, cum dolore doloribus voluptatum quia rem dolor. Debitis, blanditiis voluptatem.</p>
+                    <p>With experience in JavaScript, React, and CSS frameworks, I create dynamic and user-friendly interfaces. I am passionate about coding and constantly improving my skills. Let's work together to bring your ideas to life!</p>
                     <div className="box-btn">
                         <Link to="/resume.pdf" target="_blank" rel="noopener noreferrer">Read more</Link>
                         <Link to={'/contact'}>Let's talk</Link>
